@@ -1,0 +1,110 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo p{
+    color: #383838;
+    font-size: 40px;
+    font-weight: 700;
+}
+.footer-links{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+}
+
+.footer-links li{
+    cursor: pointer;
+}
+
+.footer-links li:hover{
+    
+     background: linear-gradient(to left, #fb7185, #a21caf, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.footer-social-icon{
+    display: flex;
+    gap: 20px;
+}
+
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+.footer-copyright hr{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+}
+
+.footer-icons-container{
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+}
+
+
+
+
+.instaHover {
+     
+     /* background: linear-gradient(to left, #fb7185, #a21caf, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    animation: insta-bounce 2s ease-in-out infinite;
+}    
+
+.facebookHover{
+animation: face-bounce 2s ease-in-out infinite;
+}
+
+.whatsappHover{
+animation: whatsapp-bounce 2s ease-in-out infinite;
+}
+
+@keyframes insta-bounce {
+            0%, 100% { transform: translateY(0)}
+            25% { transform: translateY(-15px); }
+            50% { transform: translateY(-25px); }
+            75% { transform: translateY(-10px); }
+        }
+
+@keyframes face-bounce {
+            0%, 100% { transform: translateY(0)}
+            10% { transform: translateY(-15px); }
+            40% { transform: translateY(-25px); }
+            70% { transform: translateY(-10px); }
+        } 
+   
+ @keyframes whatsapp-bounce {
+            0%, 100% { transform: translateY(0)}
+            /* 10% { transform: translateY(-15px); } */
+            40% { transform: translateY(-25px); }
+            70% { transform: translateY(-10px); }
+        }        
